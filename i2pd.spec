@@ -1,5 +1,5 @@
 Name:          i2pd
-Version:       2.61.0
+Version:       3.0.0
 Release:       1%{?dist}
 Summary:       I2P router written in C++
 Conflicts:     i2pd-git
