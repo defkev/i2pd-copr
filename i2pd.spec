@@ -41,7 +41,7 @@ cd build
   -DBUILD_SHARED_LIBS:BOOL=OFF \
   -DBOOST_INCLUDEDIR=/usr/include/boost169 \
   -DBOOST_LIBRARYDIR=/usr/lib64/boost169 \
-  -DCMAKE_CXX_FLAGS="${CXXFLAGS} -include boost/asio/ip/network_v4.hpp" \
+  -DCMAKE_CXX_FLAGS="${CXXFLAGS} -I%{_includedir} -include boost/asio/ip/network_v4.hpp" \
   -DCMAKE_PREFIX_PATH:PATH=/usr/include/openssl11 \
   -DOPENSSL_ROOT_DIR:PATH="%{_includedir}/openssl11;%{_libdir}/openssl11"
 
